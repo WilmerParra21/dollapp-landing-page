@@ -1,6 +1,8 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { useTheme } from 'next-themes'
 import { Zap, WifiOff, Shield, Bell, RefreshCw, Smartphone } from 'lucide-react'
 
 const benefits = [
@@ -37,6 +39,17 @@ const benefits = [
 ]
 
 export function BenefitsSection() {
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const screenshotSrc = mounted && resolvedTheme === 'light' 
+    ? '/screenshots/calculator-screen-light.png' 
+    : '/screenshots/calculator-screen.png'
+
   return (
     <section id="beneficios" className="py-20 md:py-28 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,7 +73,7 @@ export function BenefitsSection() {
                 {/* Screen with screenshot */}
                 <div className="relative rounded-[2.5rem] overflow-hidden bg-black">
                   <Image
-                    src="/screenshots/calculator-screen.png"
+                    src={screenshotSrc}
                     alt="DollApp Calculadora - Conversión de monedas en tiempo real"
                     width={300}
                     height={640}

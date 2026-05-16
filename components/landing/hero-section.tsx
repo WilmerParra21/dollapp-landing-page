@@ -1,6 +1,8 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
 import { Clock, Zap, WifiOff, Download } from 'lucide-react'
 
@@ -11,6 +13,17 @@ const features = [
 ]
 
 export function HeroSection() {
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const screenshotSrc = mounted && resolvedTheme === 'light' 
+    ? '/screenshots/rates-screen-light.png' 
+    : '/screenshots/rates-screen.png'
+
   return (
     <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background decorations */}
@@ -110,7 +123,7 @@ export function HeroSection() {
                 {/* Screen with screenshot */}
                 <div className="relative rounded-[2.5rem] overflow-hidden bg-black">
                   <Image
-                    src="/screenshots/rates-screen.png"
+                    src={screenshotSrc}
                     alt="DollApp Tasas - Dólar BCV, Euro BCV y más tasas en tiempo real"
                     width={340}
                     height={720}
