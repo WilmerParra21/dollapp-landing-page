@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { Clock, Zap, WifiOff, Moon } from 'lucide-react'
+import { Clock, Zap, WifiOff, Download } from 'lucide-react'
 
 const features = [
   { icon: Clock, label: 'Actualizaciones en tiempo real' },
@@ -34,14 +34,15 @@ export function HeroSection() {
             {/* CTA Buttons */}
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
+                asChild
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl px-8 py-6 text-base font-semibold shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all"
               >
-                <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17.523 2H6.477C5.114 2 4 3.114 4 4.477v15.046C4 20.886 5.114 22 6.477 22h11.046C18.886 22 20 20.886 20 19.523V4.477C20 3.114 18.886 2 17.523 2zM12 20.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM17 16H7V5h10v11z"/>
-                </svg>
-                Descargar ahora
-                <span className="ml-2 text-xs opacity-80">Android</span>
+                <a href="/dollapp.apk" download>
+                  <Download className="w-5 h-5 mr-2" />
+                  Descargar APK
+                  <span className="ml-2 text-xs opacity-80">Android</span>
+                </a>
               </Button>
               <Button
                 variant="outline"

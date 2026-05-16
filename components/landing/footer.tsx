@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Footer() {
   return (
@@ -9,9 +10,13 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">D</span>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="DollApp Logo"
+              width={40}
+              height={40}
+              className="w-10 h-10 rounded-xl"
+            />
             <div>
               <span className="font-bold text-foreground">DollApp</span>
               <p className="text-xs text-muted-foreground">Tus tasas al día, siempre contigo.</p>

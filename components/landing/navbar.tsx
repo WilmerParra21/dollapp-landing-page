@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
+import { Menu, X, Download } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -43,9 +44,13 @@ export function Navbar() {
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="#inicio" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-primary flex items-center justify-center shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-shadow">
-              <span className="text-primary-foreground font-bold text-lg">D</span>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="DollApp Logo"
+              width={40}
+              height={40}
+              className="w-9 h-9 md:w-10 md:h-10 rounded-xl shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-shadow"
+            />
             <div className="flex flex-col">
               <span className="font-bold text-foreground text-base md:text-lg leading-tight">DollApp</span>
               <span className="text-[10px] md:text-xs text-muted-foreground leading-tight">Tus tasas al día</span>
@@ -86,8 +91,11 @@ export function Navbar() {
               </button>
             )}
 
-            <Button className="hidden sm:flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl px-5 shadow-lg shadow-primary/20">
-              Descargar app
+            <Button asChild className="hidden sm:flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl px-5 shadow-lg shadow-primary/20">
+              <a href="/dollapp.apk" download>
+                <Download className="w-4 h-4 mr-2" />
+                Descargar APK
+              </a>
             </Button>
 
             {/* Mobile menu button */}
@@ -124,9 +132,12 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl">
-            Descargar app
-          </Button>
+          <Button asChild className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl">
+              <a href="/dollapp.apk" download>
+                <Download className="w-4 h-4 mr-2" />
+                Descargar APK
+              </a>
+            </Button>
         </div>
       </div>
     </header>
