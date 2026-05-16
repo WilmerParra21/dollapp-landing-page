@@ -97,16 +97,32 @@ export function HeroSection() {
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-accent/30 rounded-[3rem] blur-2xl scale-90 animate-glow" />
               
-              {/* Phone screenshot */}
-              <div className="relative">
-                <Image
-                  src="/screenshots/calculator-screen.png"
-                  alt="DollApp Calculadora - Conversión de monedas en tiempo real"
-                  width={340}
-                  height={720}
-                  className="w-full h-auto rounded-[2rem] shadow-2xl"
-                  priority
-                />
+              {/* Phone body with realistic frame */}
+              <div className="relative bg-gray-900 dark:bg-gray-800 rounded-[3rem] p-2 shadow-2xl ring-1 ring-gray-700/50">
+                {/* Inner frame border */}
+                <div className="absolute inset-1 rounded-[2.75rem] ring-1 ring-gray-600/30 pointer-events-none" />
+                
+                {/* Dynamic Island / Notch */}
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 w-24 h-7 bg-black rounded-full z-10 flex items-center justify-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-gray-800 ring-1 ring-gray-700" />
+                </div>
+                
+                {/* Screen with screenshot */}
+                <div className="relative rounded-[2.5rem] overflow-hidden bg-black">
+                  <Image
+                    src="/screenshots/rates-screen.png"
+                    alt="DollApp Tasas - Dólar BCV, Euro BCV y más tasas en tiempo real"
+                    width={340}
+                    height={720}
+                    className="w-full h-auto"
+                    priority
+                  />
+                </div>
+                
+                {/* Side buttons */}
+                <div className="absolute -right-0.5 top-28 w-1 h-12 bg-gray-700 rounded-l-sm" />
+                <div className="absolute -right-0.5 top-44 w-1 h-12 bg-gray-700 rounded-l-sm" />
+                <div className="absolute -left-0.5 top-32 w-1 h-16 bg-gray-700 rounded-r-sm" />
               </div>
             </div>
           </div>
