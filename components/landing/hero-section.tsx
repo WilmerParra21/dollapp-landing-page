@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Clock, Zap, WifiOff, Download } from 'lucide-react'
 
@@ -96,94 +97,16 @@ export function HeroSection() {
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-accent/30 rounded-[3rem] blur-2xl scale-90 animate-glow" />
               
-              {/* Phone body */}
-              <div className="relative bg-card rounded-[2.5rem] p-3 shadow-2xl border border-border">
-                {/* Screen */}
-                <div className="bg-[#0E5C3A] rounded-[2rem] overflow-hidden">
-                  {/* Status bar */}
-                  <div className="flex items-center justify-between px-6 py-2 text-white/80 text-xs">
-                    <span>9:41</span>
-                    <div className="flex items-center gap-1">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12.33 4.67L19 11.33V12a7 7 0 01-14 0v-.67l6.67-6.66a.5.5 0 01.66 0z"/>
-                      </svg>
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M2 17h20v4H2zM4 10h3v5H4zM9 6h3v9H9zM14 3h3v12h-3zM19 7h3v8h-3z"/>
-                      </svg>
-                      <svg className="w-6 h-4" fill="currentColor" viewBox="0 0 24 16">
-                        <rect x="0" y="2" width="20" height="12" rx="2" ry="2" stroke="currentColor" strokeWidth="1" fill="none"/>
-                        <rect x="2" y="4" width="14" height="8" rx="1" fill="currentColor"/>
-                        <rect x="21" y="5" width="2" height="6" rx="1" fill="currentColor"/>
-                      </svg>
-                    </div>
-                  </div>
-
-                  {/* App content */}
-                  <div className="px-4 pb-6">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
-                        <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                      </div>
-                      <span className="text-white font-semibold">Calculadora</span>
-                      <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
-                        <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                      </div>
-                    </div>
-
-                    {/* Amount input */}
-                    <div className="bg-white/10 rounded-2xl p-4 mb-4">
-                      <span className="text-white/60 text-xs">Monto</span>
-                      <div className="text-white text-3xl font-bold">100</div>
-                    </div>
-
-                    {/* Currency selectors */}
-                    <div className="flex items-center gap-2 mb-4">
-                      <div className="flex-1 bg-white/10 rounded-xl p-3 flex items-center gap-2">
-                        <span className="text-lg">🇺🇸</span>
-                        <span className="text-white font-medium">USD</span>
-                      </div>
-                      <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-                        <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                        </svg>
-                      </div>
-                      <div className="flex-1 bg-white/10 rounded-xl p-3 flex items-center gap-2">
-                        <span className="text-lg">🇻🇪</span>
-                        <span className="text-white font-medium">VES</span>
-                      </div>
-                    </div>
-
-                    {/* Result */}
-                    <div className="bg-white rounded-2xl p-4 text-center">
-                      <span className="text-gray-500 text-xs">Resultado</span>
-                      <div className="text-[#0E5C3A] text-2xl font-bold">Bs. 9.845,00</div>
-                      <div className="flex items-center justify-center gap-2 mt-2 text-xs text-gray-500">
-                        <span>Tasa: USD BCV = Bs. 98,45</span>
-                      </div>
-                    </div>
-
-                    {/* Quick amounts */}
-                    <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
-                      {[1, 5, 10, 20, 50, 100].map((amount) => (
-                        <button
-                          key={amount}
-                          className={`px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap ${
-                            amount === 100
-                              ? 'bg-[#22C76F] text-white'
-                              : 'bg-white/10 text-white/80'
-                          }`}
-                        >
-                          {amount}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+              {/* Phone screenshot */}
+              <div className="relative">
+                <Image
+                  src="/screenshots/calculator-screen.png"
+                  alt="DollApp Calculadora - Conversión de monedas en tiempo real"
+                  width={340}
+                  height={720}
+                  className="w-full h-auto rounded-[2rem] shadow-2xl"
+                  priority
+                />
               </div>
             </div>
           </div>
