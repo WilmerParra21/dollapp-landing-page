@@ -1,6 +1,6 @@
 'use client'
 
-import { Coins, DollarSign, Zap } from 'lucide-react'
+import { Coins, DollarSign, Zap } from 'lucide-react';
 
 const steps = [
   {

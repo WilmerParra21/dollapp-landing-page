@@ -1,10 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import Image from 'next/image'
-import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
-import { Clock, Zap, WifiOff, Download } from 'lucide-react'
+import { Clock, Download, WifiOff, Zap } from 'lucide-react'
+import { useTheme } from 'next-themes'
+import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 const features = [
   { icon: Clock, label: 'Actualizaciones en tiempo real' },
@@ -57,18 +57,6 @@ export function HeroSection() {
                   Descargar APK
                   <span className="ml-2 text-xs opacity-80">Android</span>
                 </a>
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="rounded-xl px-8 py-6 text-base font-semibold border-2 hover:bg-secondary transition-all"
-              >
-                <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
-                </svg>
-                Ver cómo funciona
-                <span className="ml-2 text-xs text-muted-foreground">1 min</span>
               </Button>
             </div>
 

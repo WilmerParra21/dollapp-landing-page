@@ -1,17 +1,12 @@
 'use client'
 
-import { Building2, Coins, Calculator, TrendingUp, Moon } from 'lucide-react'
+import { Calculator, Coins, Moon, TrendingUp } from 'lucide-react'
 
 const features = [
   {
-    icon: Building2,
-    title: 'Tasas BCV',
-    description: 'Actualizadas al instante directamente desde fuentes oficiales.',
-  },
-  {
     icon: Coins,
     title: 'Múltiples monedas',
-    description: 'Consulta tasas de dólar, euro, yuan y más divisas en tiempo real.',
+    description: 'Consulta desde fuentes oficiales las tasas del dólar, euro, yuan y más en tiempo real.',
   },
   {
     icon: Calculator,
@@ -40,7 +35,7 @@ export function FeaturesSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}

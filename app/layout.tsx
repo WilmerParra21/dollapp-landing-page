@@ -1,6 +1,6 @@
+import { ThemeProvider } from '@/components/theme-provider'
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
-import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 const inter = Inter({ 
@@ -9,12 +9,13 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'DollApp - Tus tasas al día, siempre contigo',
+  title: 'DollApp',
   description: 'DollApp es tu calculadora de tasas de cambio en tiempo real. Consulta, compara y convierte monedas al instante de forma rápida, segura y sin complicaciones.',
   keywords: ['tasas de cambio', 'calculadora', 'BCV', 'dólar', 'euro', 'bolivar', 'Venezuela', 'fintech'],
   authors: [{ name: 'DollApp' }],
   icons: {
-    icon: '/favicon.ico',
+    icon: '/logo.png',
+    apple: '/apple-icon.png',
   },
 }
 
