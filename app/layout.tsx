@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'DollApp - Tus tasas al día, siempre contigo',
   description: 'DollApp es tu calculadora de tasas de cambio en tiempo real. Consulta, compara y convierte monedas al instante de forma rápida, segura y sin complicaciones.',
-  keywords: ['tasas de cambio', 'calculadora', 'BCV', 'USDT', 'dólar', 'bolivar', 'Venezuela', 'fintech'],
+  keywords: ['tasas de cambio', 'calculadora', 'BCV', 'dólar', 'euro', 'bolivar', 'Venezuela', 'fintech'],
   authors: [{ name: 'DollApp' }],
   icons: {
     icon: '/favicon.ico',

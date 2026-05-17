@@ -7,7 +7,7 @@ const steps = [
     icon: Coins,
     number: '01',
     title: 'Selecciona tus monedas',
-    description: 'Elige las divisas que quieres convertir: USD, EUR, VES, USDT y más.',
+    description: 'Elige las divisas que quieres convertir: USD, EUR, VES, COP y más.',
   },
   {
     icon: DollarSign,

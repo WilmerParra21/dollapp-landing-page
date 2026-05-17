@@ -10,8 +10,8 @@ const features = [
   },
   {
     icon: Coins,
-    title: 'USDT Referencial',
-    description: 'Consulta la tasa USDT referencial del mercado en tiempo real.',
+    title: 'Múltiples monedas',
+    description: 'Consulta tasas de dólar, euro, yuan y más divisas en tiempo real.',
   },
   {
     icon: Calculator,

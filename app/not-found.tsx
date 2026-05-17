@@ -62,10 +62,10 @@ export default function NotFound() {
             variant="outline"
             className="rounded-xl px-6"
           >
-            <Link href="/#descargar">
+            <a href="https://github.com/WilmerParra21/DollApp/releases/download/V1/v1.0.3.Dollapp.apk" download>
               <Download className="w-4 h-4 mr-2" />
               Intentar descarga
-            </Link>
+            </a>
           </Button>
         </div>
 

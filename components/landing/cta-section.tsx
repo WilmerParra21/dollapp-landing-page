@@ -40,7 +40,7 @@ export function CTASection() {
             size="lg"
             className="bg-white hover:bg-white/90 text-primary rounded-xl px-8 h-14 flex items-center gap-3 font-semibold shadow-lg"
           >
-            <a href="/dollapp.apk" download>
+            <a href="https://github.com/WilmerParra21/DollApp/releases/download/V1/v1.0.3.Dollapp.apk" download>
               <Download className="w-5 h-5" />
               Descargar APK
               <span className="text-xs opacity-70 ml-1">Android</span>

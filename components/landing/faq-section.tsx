@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: '¿De dónde obtienen las tasas de cambio?',
-    answer: 'Las tasas BCV se obtienen directamente del Banco Central de Venezuela. Las tasas de USDT se calculan a partir de promedios del mercado P2P de plataformas confiables.',
+    answer: 'Las tasas BCV se obtienen directamente del Banco Central de Venezuela. Las demás tasas se calculan a partir de fuentes oficiales y datos actualizados del mercado.',
   },
   {
     question: '¿Funciona sin conexión a internet?',
