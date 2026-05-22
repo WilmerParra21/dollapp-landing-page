@@ -1,12 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { Menu, X, Download } from 'lucide-react'
-import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import { Download, Menu, X } from 'lucide-react'
+import { useTheme } from 'next-themes'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 const navLinks = [
   { href: '#inicio', label: 'Inicio' },
@@ -95,7 +95,7 @@ export function Navbar() {
             )}
 
             <Button asChild className="hidden sm:flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl px-5 shadow-lg shadow-primary/20">
-              <a href="https://github.com/WilmerParra21/DollApp/releases/download/V1/v1.0.3.Dollapp.apk" download>
+              <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1/DollApp.v1.0.4.apk" download>
                 <Download className="w-4 h-4 mr-2" />
                 Descargar APK
               </a>
@@ -136,7 +136,7 @@ export function Navbar() {
             </Link>
           ))}
           <Button asChild className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl">
-              <a href="https://github.com/WilmerParra21/DollApp/releases/download/V1/v1.0.3.Dollapp.apk" download>
+              <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1/DollApp.v1.0.4.apk" download>
                 <Download className="w-4 h-4 mr-2" />
                 Descargar APK
               </a>

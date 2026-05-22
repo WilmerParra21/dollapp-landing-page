@@ -1,9 +1,9 @@
 'use client'
 
-import Link from 'next/link'
-import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { Home, ArrowLeft, Download } from 'lucide-react'
+import { ArrowLeft, Download, Home } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function NotFound() {
   return (
@@ -62,7 +62,7 @@ export default function NotFound() {
             variant="outline"
             className="rounded-xl px-6"
           >
-            <a href="https://github.com/WilmerParra21/DollApp/releases/download/V1/v1.0.3.Dollapp.apk" download>
+            <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1/DollApp.v1.0.4.apk" download>
               <Download className="w-4 h-4 mr-2" />
               Intentar descarga
             </a>

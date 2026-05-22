@@ -1,8 +1,8 @@
 'use client'
 
-import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Download } from 'lucide-react'
+import Image from 'next/image'
 
 export function CTASection() {
   return (
@@ -40,7 +40,7 @@ export function CTASection() {
             size="lg"
             className="bg-white hover:bg-white/90 text-primary rounded-xl px-8 h-14 flex items-center gap-3 font-semibold shadow-lg"
           >
-            <a href="https://github.com/WilmerParra21/DollApp/releases/download/V1/v1.0.3.Dollapp.apk" download>
+            <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1/DollApp.v1.0.4.apk" download>
               <Download className="w-5 h-5" />
               Descargar APK
               <span className="text-xs opacity-70 ml-1">Android</span>
