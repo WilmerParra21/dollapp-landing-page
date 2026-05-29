@@ -52,7 +52,7 @@ export function HeroSection() {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl px-8 py-6 text-base font-semibold shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all"
               >
-                <a href="https://github.com/WilmerParra21/DollApp/releases/download/V1/v1.0.3.Dollapp.apk" download>
+                <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1/DollApp.v1.0.4.apk" download>
                   <Download className="w-5 h-5 mr-2" />
                   Descargar APK
                   <span className="ml-2 text-xs opacity-80">Android</span>
