@@ -95,9 +95,9 @@ export function Navbar() {
             )}
 
             <Button asChild className="hidden sm:flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl px-5 shadow-lg shadow-primary/20">
-              <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1/DollApp.v1.0.4.apk" download>
+              <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1.0/DollApp.v1.0.5.apk" download>
                 <Download className="w-4 h-4 mr-2" />
-                Descargar APK
+                Descargar App
               </a>
             </Button>
 
@@ -136,9 +136,9 @@ export function Navbar() {
             </Link>
           ))}
           <Button asChild className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl">
-              <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1/DollApp.v1.0.4.apk" download>
+              <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1.0/DollApp.v1.0.5.apk" download>
                 <Download className="w-4 h-4 mr-2" />
-                Descargar APK
+                Descargar App
               </a>
             </Button>
         </div>

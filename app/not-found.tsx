@@ -40,7 +40,7 @@ export default function NotFound() {
         {/* APK specific message */}
         <div className="bg-secondary/50 border border-border rounded-2xl p-4 mb-8">
           <p className="text-sm text-muted-foreground">
-            Si estabas buscando descargar la APK, es posible que el archivo aún no esté disponible. 
+            Si estabas buscando descargar la App, es posible que el archivo aún no esté disponible. 
             Por favor, vuelve a intentarlo más tarde.
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function NotFound() {
             variant="outline"
             className="rounded-xl px-6"
           >
-            <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1/DollApp.v1.0.4.apk" download>
+            <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1.0/DollApp.v1.0.5.apk" download>
               <Download className="w-4 h-4 mr-2" />
               Intentar descarga
             </a>

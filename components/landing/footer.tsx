@@ -1,7 +1,7 @@
 'use client'
 
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function Footer() {
   return (
@@ -35,7 +35,7 @@ export function Footer() {
               Beneficios
             </Link>
             <Link href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">
-              FAQ
+              Preguntas
             </Link>
           </div>
 

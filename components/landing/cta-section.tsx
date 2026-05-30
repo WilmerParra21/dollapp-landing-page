@@ -40,9 +40,9 @@ export function CTASection() {
             size="lg"
             className="bg-white hover:bg-white/90 text-primary rounded-xl px-8 h-14 flex items-center gap-3 font-semibold shadow-lg"
           >
-            <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1/DollApp.v1.0.4.apk" download>
+            <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1.0/DollApp.v1.0.5.apk" download>
               <Download className="w-5 h-5" />
-              Descargar APK
+              Descargar App
               <span className="text-xs opacity-70 ml-1">Android</span>
             </a>
           </Button>
