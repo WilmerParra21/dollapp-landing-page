@@ -37,12 +37,23 @@ export function Footer() {
             <Link href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">
               Preguntas
             </Link>
+            <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
+              Privacidad
+            </Link>
+            <Link href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">
+              Términos
+            </Link>
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-muted-foreground">
-            © 2026 DollApp. Todos los derechos reservados.
-          </p>
+          <div className="text-center md:text-right">
+            <p className="text-sm text-muted-foreground">
+              © 2026 DollApp. Todos los derechos reservados.
+            </p>
+            <p className="text-xs text-muted-foreground mt-1">
+              Desarrollado por <span className="text-foreground">devsparra</span>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
