@@ -1,9 +1,9 @@
 'use client'
 
-import { Navbar } from '@/components/landing/navbar'
 import { Footer } from '@/components/landing/footer'
+import { Navbar } from '@/components/landing/navbar'
 import { Card } from '@/components/ui/card'
-import { FileText, Scale, AlertTriangle, RefreshCw, Globe, Shield, Smartphone, Clock } from 'lucide-react'
+import { AlertTriangle, Clock, FileText, Globe, RefreshCw, Scale, Shield, Smartphone } from 'lucide-react'
 
 const terms = [
   {
@@ -60,7 +60,6 @@ const disclaimers = [
 const permissions = [
   'Usar la aplicación para consulta personal de tasas de cambio',
   'Realizar conversiones entre las monedas disponibles',
-  'Configurar notificaciones locales para alertas de tasas',
   'Compartir capturas de pantalla o valores de tasas de manera personal',
   'Usar la aplicación en modo offline con datos en caché'
 ]

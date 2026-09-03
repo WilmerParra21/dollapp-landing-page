@@ -1,20 +1,20 @@
 'use client'
 
-import { Navbar } from '@/components/landing/navbar'
 import { Footer } from '@/components/landing/footer'
+import { Navbar } from '@/components/landing/navbar'
 import { Card } from '@/components/ui/card'
-import { Shield, Lock, Eye, Database, Bell, RefreshCw } from 'lucide-react'
+import { Database, Eye, Lock, RefreshCw, Shield } from 'lucide-react'
 
 const sections = [
   {
     icon: Lock,
-    title: 'Sin recopilación de datos',
-    content: 'DollApp no recopila, almacena ni transmite ningún tipo de información personal de sus usuarios. Tu privacidad es nuestra prioridad absoluta.'
+    title: 'Sin datos personales',
+    content: 'DollApp no solicita cuentas ni recopila nombres, correos electrónicos, teléfonos, contactos, ubicación, fotos, archivos o información financiera personal.'
   },
   {
     icon: Database,
-    title: 'Funcionamiento local',
-    content: 'Toda la información que visualizas en la aplicación se procesa localmente en tu dispositivo. No existe ningún servidor que guarde tus datos de uso, preferencias o historial.'
+    title: 'Procesamiento local y caché',
+    content: 'Las conversiones y preferencias se procesan localmente. La aplicación puede guardar tasas y configuraciones en caché en tu dispositivo para funcionar sin conexión.'
   },
   {
     icon: Eye,
@@ -27,14 +27,14 @@ const sections = [
     content: 'Las conexiones para obtener las tasas de cambio se realizan únicamente hacia fuentes oficiales y públicas, sin intermediarios que puedan acceder a tu información.'
   },
   {
+    icon: Database,
+    title: 'Diagnóstico y mejora',
+    content: 'Si la aplicación presenta un problema, podemos enviar información relacionada con ese fallo únicamente para diagnosticarlo, corregirlo y mejorar su estabilidad. No se envía el contenido de tus conversiones ni tus datos personales.'
+  },
+  {
     icon: RefreshCw,
     title: 'Datos en tiempo real',
     content: 'Las tasas de cambio mostradas provienen de fuentes públicas y oficiales. DollApp actúa únicamente como un medio de visualización e información.'
-  },
-  {
-    icon: Bell,
-    title: 'Notificaciones locales',
-    content: 'Las notificaciones de la aplicación funcionan de manera local en tu dispositivo. No enviamos ni recibimos información sobre tus alertas o preferencias.'
   }
 ]
 
@@ -42,7 +42,7 @@ const highlights = [
   'No solicitamos registro ni cuenta de usuario',
   'No recopilamos nombres, correos electrónicos ni teléfonos',
   'No accedemos a tus contactos, ubicación ni archivos',
-  'No compartimos información porque no la tenemos',
+  'La información de fallos se usa para mejorar la estabilidad',
   'No utilizamos servicios de terceros para analíticas',
   'No mostramos publicidad personalizada'
 ]
@@ -99,8 +99,8 @@ export default function PrivacyPage() {
               Su único propósito es proporcionar tasas de cambio de monedas de manera rápida, precisa y confiable para usuarios en Venezuela y cualquier persona interesada en el mercado cambiario.
             </p>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              Debido a la naturaleza de la aplicación, <strong>no recopilamos ningún tipo de dato personal</strong>. 
-              Esta política describe cómo funciona DollApp en relación con tu privacidad y los datos que maneja.
+              Debido a la naturaleza de la aplicación, <strong>no recopilamos datos personales ni el contenido de tus conversiones</strong>. 
+              Para detectar y corregir errores, sí podemos enviar información relacionada con los fallos. Esta política describe cómo funciona DollApp en relación con tu privacidad y los datos que maneja.
             </p>
           </Card>
 
@@ -132,7 +132,7 @@ export default function PrivacyPage() {
                 Información que no recopilamos
               </h2>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
-                Para ser completamente transparentes, aquí está la lista de datos que DollApp NO recopila bajo ninguna circunstancia:
+                Para ser completamente transparentes, estos son los datos personales y contenidos que DollApp no recopila:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                 {[
@@ -142,7 +142,7 @@ export default function PrivacyPage() {
                   'Fotos o archivos multimedia',
                   'Historial de navegación',
                   'Preferencias del dispositivo',
-                  'Datos de uso de la aplicación',
+                  'Contenido de tus conversiones',
                   'Información financiera personal',
                   'Identificadores de publicidad',
                   'Datos biométricos'
@@ -174,15 +174,6 @@ export default function PrivacyPage() {
                     <p className="text-xs md:text-sm text-muted-foreground">Para obtener las tasas de cambio actualizadas desde fuentes oficiales.</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-green-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-green-500 text-xs md:text-sm">✓</span>
-                  </div>
-                  <div>
-                    <p className="text-sm md:text-base font-medium text-foreground">Notificaciones</p>
-                    <p className="text-xs md:text-sm text-muted-foreground">Para enviarte alertas sobre cambios en las tasas que te interesan (gestionadas localmente).</p>
-                  </div>
-                </div>
               </div>
             </Card>
 
@@ -191,9 +182,7 @@ export default function PrivacyPage() {
                 Menores de edad
               </h2>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                DollApp no está dirigida específicamente a menores de edad, pero dado que no recopilamos ningún dato personal, 
-                puede ser utilizada por personas de cualquier edad sin restricciones de privacidad. No existe riesgo de exposición 
-                de datos personales porque simplemente no los recopilamos.
+                  DollApp no está dirigida específicamente a menores de edad. No solicitamos cuentas ni recopilamos datos personales o contenido de conversiones; únicamente puede enviarse información relacionada con fallos para mejorar la estabilidad de la aplicación.
               </p>
             </Card>
 
