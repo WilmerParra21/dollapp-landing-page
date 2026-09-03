@@ -1,7 +1,8 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { ArrowLeft, Download, Home } from 'lucide-react'
+import { GooglePlayIcon } from '@/components/ui/google-play-icon'
+import { ArrowLeft, Home } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -62,8 +63,8 @@ export default function NotFound() {
             variant="outline"
             className="rounded-xl px-6"
           >
-            <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1.0/DollApp.v1.0.5.apk" download>
-              <Download className="w-4 h-4 mr-2" />
+            <a href="https://play.google.com/store/apps/details?id=com.devsparra.dollapp" target="_blank" rel="noreferrer">
+              <GooglePlayIcon className="w-4 h-4 mr-2" />
               Intentar descarga
             </a>
           </Button>

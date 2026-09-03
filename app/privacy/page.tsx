@@ -19,12 +19,12 @@ const sections = [
   {
     icon: Eye,
     title: 'Sin seguimiento',
-    content: 'No utilizamos cookies, píxeles de seguimiento, analíticas de terceros ni ninguna otra tecnología de rastreo. Tu actividad en la app es completamente privada.'
+    content: 'No utilizamos cookies, píxeles de seguimiento, analíticas de terceros ni ninguna otra tecnología para analizar tu uso cotidiano de la aplicación.'
   },
   {
     icon: Shield,
     title: 'Conexiones seguras',
-    content: 'Las conexiones para obtener las tasas de cambio se realizan únicamente hacia fuentes oficiales y públicas, sin intermediarios que puedan acceder a tu información.'
+    content: 'Las conexiones para obtener las tasas de cambio se realizan mediante canales seguros hacia fuentes públicas y servicios de referencia. No se envía con ellas el contenido de tus conversiones ni información personal.'
   },
   {
     icon: Database,
@@ -33,8 +33,8 @@ const sections = [
   },
   {
     icon: RefreshCw,
-    title: 'Datos en tiempo real',
-    content: 'Las tasas de cambio mostradas provienen de fuentes públicas y oficiales. DollApp actúa únicamente como un medio de visualización e información.'
+    title: 'Fuentes de las tasas',
+    content: 'Las tasas mostradas provienen de fuentes públicas y servicios de referencia, y se actualizan según la disponibilidad de esos servicios. DollApp actúa únicamente como un medio de visualización e información.'
   }
 ]
 

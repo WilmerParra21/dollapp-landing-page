@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { Download } from 'lucide-react'
+import { GooglePlayIcon } from '@/components/ui/google-play-icon'
 import Image from 'next/image'
 
 export function CTASection() {
@@ -34,14 +34,14 @@ export function CTASection() {
             </div>
           </div>
 
-          {/* Download button */}
+          {/* Google Play button */}
           <Button
             asChild
             size="lg"
             className="bg-white hover:bg-white/90 text-primary rounded-xl px-8 h-14 flex items-center gap-3 font-semibold shadow-lg"
           >
-            <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1.0/DollApp.v1.0.5.apk" download>
-              <Download className="w-5 h-5" />
+            <a href="https://play.google.com/store/apps/details?id=com.devsparra.dollapp" target="_blank" rel="noreferrer">
+              <GooglePlayIcon className="w-5 h-5" />
               Descargar App
               <span className="text-xs opacity-70 ml-1">Android</span>
             </a>

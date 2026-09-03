@@ -1,7 +1,8 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { Clock, Download, WifiOff, Zap } from 'lucide-react'
+import { GooglePlayIcon } from '@/components/ui/google-play-icon'
+import { Clock, WifiOff, Zap } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
@@ -52,8 +53,8 @@ export function HeroSection() {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl px-8 py-6 text-base font-semibold shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all"
               >
-                <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1.0/DollApp.v1.0.5.apk" download>
-                  <Download className="w-5 h-5 mr-2" />
+                <a href="https://play.google.com/store/apps/details?id=com.devsparra.dollapp" target="_blank" rel="noreferrer">
+                  <GooglePlayIcon className="w-5 h-5 mr-2" />
                   Descargar APP
                   <span className="ml-2 text-xs opacity-80">Android</span>
                 </a>

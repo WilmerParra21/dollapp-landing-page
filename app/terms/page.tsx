@@ -49,7 +49,7 @@ const disclaimers = [
   },
   {
     title: 'Precisión de datos',
-    description: 'Aunque trabajamos con fuentes confiables, los datos pueden presentar variaciones o retrasos respecto a valores oficiales en tiempo real.'
+    description: 'Aunque trabajamos con fuentes confiables, los datos pueden presentar variaciones o retrasos respecto a los valores vigentes de cada fuente.'
   },
   {
     title: 'Disponibilidad del servicio',

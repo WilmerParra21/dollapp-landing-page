@@ -1,8 +1,9 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { GooglePlayIcon } from '@/components/ui/google-play-icon'
 import { cn } from '@/lib/utils'
-import { Download, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -95,8 +96,8 @@ export function Navbar() {
             )}
 
             <Button asChild className="hidden sm:flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl px-5 shadow-lg shadow-primary/20">
-              <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1.0/DollApp.v1.0.5.apk" download>
-                <Download className="w-4 h-4 mr-2" />
+              <a href="https://play.google.com/store/apps/details?id=com.devsparra.dollapp" target="_blank" rel="noreferrer">
+                <GooglePlayIcon className="w-4 h-4 mr-2" />
                 Descargar App
               </a>
             </Button>
@@ -136,8 +137,8 @@ export function Navbar() {
             </Link>
           ))}
           <Button asChild className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl">
-              <a href="https://github.com/WilmerParra21/DollApp/releases/download/v1.0/DollApp.v1.0.5.apk" download>
-                <Download className="w-4 h-4 mr-2" />
+              <a href="https://play.google.com/store/apps/details?id=com.devsparra.dollapp" target="_blank" rel="noreferrer">
+                <GooglePlayIcon className="w-4 h-4 mr-2" />
                 Descargar App
               </a>
             </Button>
